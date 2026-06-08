@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片搜索 - 影视在线</title>
+    <meta name="description" content="影视在线搜索页支持按照影片名称、年份、地区、类型、题材和标签快速查找高清影视内容。">
+    <meta name="keywords" content="影片搜索,影视在线搜索,影视在线,高清电影,电视剧在线观看,免费影视,在线播放,剧情片,爱情片,动作片,综艺节目,视频播放,影视资源,电影网站,高清视频">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header-inner">
+        <a class="brand" href="index.html" aria-label="影视在线">
+            <span class="brand-mark">▶</span>
+            <span class="brand-name">影视在线</span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="categories.html" class="nav-link">分类</a>
+                <a href="rank.html" class="nav-link">排行榜</a>
+                <a href="search.html" class="nav-link active">搜索</a>
+        </nav>
+        <button class="mobile-menu-button" type="button" aria-label="打开导航" data-menu-button>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav class="mobile-nav" aria-label="移动导航" data-mobile-nav>
+            <a href="index.html" class="mobile-nav-link">首页</a>
+            <a href="categories.html" class="mobile-nav-link">分类</a>
+            <a href="rank.html" class="mobile-nav-link">排行榜</a>
+            <a href="search.html" class="mobile-nav-link active">搜索</a>
+    </nav>
+</header>
+<main>
+    <section class="page-hero compact-hero search-hero">
+        <div>
+            <p class="eyebrow">搜索影片</p>
+            <h1>快速查找想看的影视内容</h1>
+            <p>输入片名、年份、地区、题材或标签，即可在影视在线片库中查找对应影片详情。</p>
+        </div>
+    </section>
+    <section class="section white-section search-section">
+        <div class="search-panel">
+            <input id="global-search-input" type="search" placeholder="输入影片名称、年份、地区或题材" aria-label="影片搜索">
+            <select id="global-search-category" aria-label="分类筛选">
+                <option value="">全部分类</option>
+                <option value="action-adventure">动作冒险</option>
+                <option value="romance-city">爱情都市</option>
+                <option value="comedy-fun">喜剧欢乐</option>
+                <option value="suspense-crime">悬疑犯罪</option>
+                <option value="sci-fi-fantasy">科幻奇幻</option>
+                <option value="animation-family">动画家庭</option>
+                <option value="history-biography">历史传记</option>
+                <option value="realistic-drama">现实剧情</option>
+            </select>
+        </div>
+        <div id="search-results" class="movie-grid search-results"></div>
+    </section>
+</main>
+<script src="assets/js/search-data.js"></script>
+<footer class="site-footer">
+    <div class="footer-grid">
+        <section>
+            <div class="footer-brand">
+                <span class="brand-mark">▶</span>
+                <span>影视在线</span>
+            </div>
+            <p>影视在线是专业的高清影视内容平台，提供海量电影、电视剧、综艺节目在线观看服务，涵盖剧情片、爱情片、动作片、喜剧片等各类精彩影片，高清流畅播放，为您带来优质的观影体验。</p>
+        </section>
+        <section>
+            <h2>热门分类</h2>
+            <ul>
+                    <li><a href="category-action-adventure.html">动作冒险</a></li>
+                    <li><a href="category-romance-city.html">爱情都市</a></li>
+                    <li><a href="category-comedy-fun.html">喜剧欢乐</a></li>
+                    <li><a href="category-suspense-crime.html">悬疑犯罪</a></li>
+                    <li><a href="category-sci-fi-fantasy.html">科幻奇幻</a></li>
+                    <li><a href="category-animation-family.html">动画家庭</a></li>
+                    <li><a href="category-history-biography.html">历史传记</a></li>
+                    <li><a href="category-realistic-drama.html">现实剧情</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>快速入口</h2>
+            <ul>
+                <li><a href="index.html">首页推荐</a></li>
+                <li><a href="categories.html">全部分类</a></li>
+                <li><a href="rank.html">热播排行</a></li>
+                <li><a href="search.html">影片搜索</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>观影频道</h2>
+            <p>覆盖电影、剧集、综艺、动画、纪实等多元题材，支持电脑和手机浏览。</p>
+        </section>
+    </div>
+    <div class="footer-bottom">© 2026 影视在线 · 高清影视内容平台</div>
+</footer>
+    <script src="assets/js/main.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

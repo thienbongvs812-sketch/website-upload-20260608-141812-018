@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索影片 - 免费在线视频 - 最新国产热门电影电视剧 - 高清流畅播放 - 无插件纯净观影</title>
+  <meta name="description" content="免费在线视频搜索页，支持按影片名称、题材、地区、年份和标签查找热门电影电视剧。">
+  <meta name="keywords" content="搜索影片,免费在线视频,最新国产电影,热门电视剧,高清流畅播放,无插件,纯净观影,免费影视,在线观看,国产影视,热门电影,免费电视剧,高清视频">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-container">
+      <div class="nav-row">
+        <a class="flex items-center space-x-2 group" href="index.html" aria-label="高清剧集大全">
+          <span class="logo-mark">▶</span>
+          <span class="logo-text">高清剧集大全</span>
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="index.html">首页</a>
+          <a href="categories.html">分类</a>
+          <a href="ranking.html">排行榜</a>
+          <a href="search.html">搜索</a>
+        </nav>
+        <form class="search-box desktop-search" method="get" action="search.html">
+          <input type="search" name="q" placeholder="搜索影片、类型、地区" autocomplete="off">
+          <button type="submit">⌕</button>
+        </form>
+        <button class="mobile-menu-button" type="button" data-menu-button aria-label="菜单">☰</button>
+      </div>
+      <div class="mobile-panel" data-mobile-panel>
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类</a>
+        <a href="ranking.html">排行榜</a>
+        <a href="search.html">搜索</a>
+        <form class="search-box" method="get" action="search.html" style="width: 100%; margin-top: 10px;">
+          <input type="search" name="q" placeholder="搜索影片、类型、地区" autocomplete="off">
+          <button type="submit">⌕</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main class="site-container" data-search-page>
+    <section class="page-hero">
+      <h1 data-search-heading>热门内容搜索</h1>
+      <p>输入影片名称、题材、地区、年份或标签，快速查找可观看内容。</p>
+      <form class="search-box" method="get" action="search.html" style="width: min(100%, 560px); margin-top: 22px;">
+        <input type="search" name="q" placeholder="搜索影片、类型、地区" autocomplete="off">
+        <button type="submit">⌕</button>
+      </form>
+    </section>
+    <section class="section search-results" data-search-results>
+      <div class="empty-state">输入关键词开始搜索</div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="site-container">
+      <p>© 2026 高清剧集大全 · 免费在线视频 · 高清流畅播放 · 无插件纯净观影</p>
+    </div>
+  </footer>
+  <script src="assets/site.js" defer></script>
+  <script src="assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
